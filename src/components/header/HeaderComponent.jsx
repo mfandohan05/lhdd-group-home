@@ -1,4 +1,3 @@
-import './HeaderComponent.css';
 import navbarLogo from '@/assets/navbar-logo.png';
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { SheetClose } from "@/components/ui/sheet"
@@ -9,7 +8,7 @@ import { Menu } from "lucide-react"
 function HeaderComponent() {
     return (
         <header className="flex justify-between items-center bg-primary px-4">
-            <img src={navbarLogo} alt="LHDD Logo" className='navbar-logo' />
+            <img src={navbarLogo} alt="LHDD Logo" className='w-[80px]' />
             <Sheet>
                 <SheetTrigger asChild>
                     <button className="p-2">
