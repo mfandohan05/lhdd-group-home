@@ -2,6 +2,7 @@ import serviceCard1 from "@/assets/service-card-1.jpg";
 import serviceCard2 from "@/assets/service-card-2.png";
 import serviceCard3 from "@/assets/service-card-3.webp";
 import serviceCard4 from "@/assets/service-card-4.webp";
+import SectionHeaderComponent from "../global/SectionHeaderComponent";
 const cards = [
     {
         cardTitle: "24/7 Residential Support",
@@ -31,10 +32,10 @@ const cards = [
 function OurServicesComponent() {
     return (
         <div>
-            <h2 className="text-2xl font-bold my-4 text-center text-primary">Our Services</h2>
-            <div>
+            <SectionHeaderComponent text="Our Services" />
+            <div className="flex flex-col">
                 {cards.map((card, index) => (
-                    <div key={index} className="flex flex-col items-center text-center py-4 gap-2 mx-8 border-b-1 border-secondary mb-6">
+                    <div key={index} className="flex flex-col items-center text-center py-4 gap-2 mx-6 border-b-1 border-secondary mb-6">
                         <img src={card.cardImage} alt={card.cardAltText} className="w-full h-60 object-cover mb-4" />
                         <h3 className="text-xl font-semibold text-primary">{card.cardTitle}</h3>
                         <p className="text-black text-base">{card.cardDescription}</p>
