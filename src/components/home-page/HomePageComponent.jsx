@@ -4,6 +4,7 @@ import OurServicesComponent from "./OurServicesComponent";
 import DividerImageComponent from "../global/DividerImageComponent";
 import dividerImage from "@/assets/divider-image.jpg";
 import HomePageCTAComponent from "./HomePageCTAComponent";
+import UsefulLinksSectionComponent from "./UsefulLinksSectionComponent";
 
 
 function HomePageComponent() {
@@ -14,6 +15,7 @@ function HomePageComponent() {
             <GuidingValuesComponent />
             <DividerImageComponent imageSrc={dividerImage} altText="Disabled adult giving caregiver a hug." />
             <HomePageCTAComponent />
+            <UsefulLinksSectionComponent />
         </>
     )
 }
