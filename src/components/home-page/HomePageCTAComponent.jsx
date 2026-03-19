@@ -1,5 +1,6 @@
 import SectionHeaderComponent from "../global/SectionHeaderComponent";
 import PrimaryButtonComponent from "../global/PrimaryButtonComponent";
+import { Link } from "react-router-dom";
 function HomePageCTAComponent() {
     return (
         <div className="w-[85vw] flex flex-col justify-center mx-auto gap-8">
@@ -10,12 +11,16 @@ function HomePageCTAComponent() {
                     <li>Individuals with developmental disabilities</li>
                     <li>Those who benefit from supervised residential support</li>
                 </ul>
-                <PrimaryButtonComponent text="Start a Referral" />
+                <Link to="/referrals">
+                    <PrimaryButtonComponent text="Start a Referral" />
+                </Link>
             </div>
             <div>
                 <SectionHeaderComponent text="Looking for care for a loved one?" />
                 <p className="font-semibold text-center text-base">Contact our team to learn more about our services and how we support our residents.</p>
-                <PrimaryButtonComponent text="Contact Us" />
+                <Link to="/contact">
+                    <PrimaryButtonComponent text="Contact Us" />
+                </Link>
             </div>
         </div>
     )

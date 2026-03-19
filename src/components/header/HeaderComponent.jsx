@@ -3,7 +3,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { SheetClose } from "@/components/ui/sheet"
 import { X } from "lucide-react"
 import { Menu } from "lucide-react"
-
+import { Link } from "react-router-dom";
 
 function HeaderComponent() {
     return (
@@ -18,11 +18,21 @@ function HeaderComponent() {
 
                 <SheetContent side="right" className="bg-primary text-white border-none" showCloseButton={false}>
                     <nav className="flex flex-col items-end space-y-6 mt-20 mr-4 text-lg">
-                        <a href="/">Home</a>
-                        <a href="/about">About Us</a>
-                        <a href="/contact">Contact Us</a>
-                        <a href="/services">Services We Offer</a>
-                        <a href="/referrals">Referrals</a>
+                        <SheetClose asChild>
+                            <Link to="/">Home</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                            <Link to="/about">About Us</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                            <Link to="/contact">Contact Us</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                            <Link to="/services">Services We Offer</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                            <Link to="/referrals">Referrals</Link>
+                        </SheetClose>
                     </nav>
                     <SheetClose asChild>
                         <button className="absolute top-4 right-4">

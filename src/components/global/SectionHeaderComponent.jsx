@@ -1,6 +1,6 @@
-function SectionHeaderComponent({ text }) {
+function SectionHeaderComponent({ text, className }) {
     return (
-        <h2 className="text-2xl font-bold my-4 text-center text-primary">{text}</h2>
+        <h2 className={`text-2xl font-bold my-4 text-center text-primary ${className || ''}`}>{text}</h2>
     )
 }
 
