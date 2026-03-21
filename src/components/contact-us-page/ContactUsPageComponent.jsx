@@ -35,6 +35,7 @@ function ContactUsPageComponent() {
                     We’re here to answer your questions and help you get started.
                 </SimpleParagraphComponent>
                 <a href="mailto:office.LHDD@livigrouphome.com" className="text-sm">✉️ office.LHDD@livigrouphome.com</a>
+                <br></br>
                 <a href="tel:(980) 222-4535" className="text-sm">📞 (980) 222-4535</a>
             </div>
             <div>

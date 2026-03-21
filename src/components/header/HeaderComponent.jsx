@@ -8,7 +8,13 @@ import { Link } from "react-router-dom";
 function HeaderComponent() {
     return (
         <header className="flex justify-between items-center bg-primary px-4">
-            <img src={navbarLogo} alt="LHDD Logo" className='w-[80px]' />
+            <Link to="/">
+                <div className='flex items-center'>
+                    <img src={navbarLogo} alt="LHDD Logo" className='w-[80px]' />
+                    <div className='text-white text-lg font-semibold'>Livi Group Home for Developmental</div>
+                </div>
+                
+            </Link>
             <Sheet>
                 <SheetTrigger asChild>
                     <button className="p-2">
