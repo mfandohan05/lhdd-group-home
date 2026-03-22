@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FooterComponent from "./components/footer/FooterComponent";
 import HeaderComponent from "./components/header/HeaderComponent";
 import MainPageComponent from "./components/MainPageComponent";
@@ -9,7 +9,7 @@ import ReferralsPageComponent from "./components/referrals-page/ReferralsPageCom
 
 function App() {
   return (
-      <HashRouter>
+      <BrowserRouter>
       <HeaderComponent />
         <Routes>
           <Route path="/" element={<MainPageComponent />} />
@@ -19,7 +19,7 @@ function App() {
           <Route path="/referrals" element={<ReferralsPageComponent />} />
         </Routes>
       <FooterComponent />
-      </HashRouter>
+      </BrowserRouter>
       
   )
 }
