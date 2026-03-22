@@ -1,7 +1,7 @@
 import serviceCard1 from "@/assets/service-card-1.jpg";
 import serviceCard2 from "@/assets/service-card-2.png";
 import serviceCard3 from "@/assets/service-card-3.webp";
-import serviceCard4 from "@/assets/service-card-4.webp";
+import serviceCard4 from "@/assets/service-card-4.jpg";
 import SectionHeaderComponent from "../global/SectionHeaderComponent";
 const cards = [
     {
