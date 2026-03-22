@@ -30,7 +30,6 @@ function HomePageCTAComponent() {
                     <li>Cerebral palsy</li>
                     <li>Blindness</li>
                 </ul>
-                
                 <Link to="/contact">
                     <PrimaryButtonComponent text="Contact Us" />
                 </Link>
