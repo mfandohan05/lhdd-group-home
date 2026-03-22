@@ -3,7 +3,7 @@ import SimpleParagraphComponent from "../global/SimpleParagraphComponent";
 import { FieldGroup, FieldLabel, FieldSet } from "../ui/field";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PrimaryButtonComponent from "../global/PrimaryButtonComponent";
 import SimpleDialogComponent from "../global/SimpleDialogComponent";
 
@@ -27,6 +27,9 @@ function ReferralsPageComponent() {
             alert("There was an error sending your message. Please try again later.");
         }
     }
+    useEffect(() => {
+        document.title = "Referrals | LHDD"
+    }, []);
     return (
         <div className="max-w-[1024px] mx-auto">
             <div>

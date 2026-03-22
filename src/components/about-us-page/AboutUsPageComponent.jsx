@@ -4,6 +4,7 @@ import SimpleParagraphComponent from "../global/SimpleParagraphComponent";
 import aboutUsImage1 from "@/assets/about-us-image-1.jpg";
 import aboutUsImage2 from "@/assets/about-us-image-2.webp";
 import aboutUsImage3 from "@/assets/about-us-image-3.jpg";
+import { useEffect } from "react";
 
 const imageData = [
     {
@@ -20,6 +21,10 @@ const imageData = [
     }
 ]
 function AboutUsPageComponent() {
+
+    useEffect(() => {
+        document.title = "About Us | LHDD"
+    }, []);
     return (
         <div className="flex flex-col items-center md:max-w-[1440px] md:mx-auto">
             <div className="md:grid grid-cols-2 md:my-8">

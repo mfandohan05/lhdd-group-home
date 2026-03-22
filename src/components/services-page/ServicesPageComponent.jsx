@@ -4,10 +4,15 @@ import SimpleParagraphComponent from "../global/SimpleParagraphComponent";
 import servicesImage1 from "@/assets/service-card-2.png";
 import servicesImage2 from "@/assets/service-card-3.webp";
 import servicesImage3 from "@/assets/about-us-image-2.webp";
+import { useEffect } from 'react';
+
 function ServicesPageComponent() {
+    useEffect(() => {
+        document.title = "Services We Offer | LHDD"
+    }, []);
     return (
-        <div className="max-w-[1440px] mx-auto w-full overflow-x-hidden">
-            <SectionHeaderComponent text="Services We Offer" className="mb-6" />
+        <div className="max-w-[1440px] mx-auto w-full overflow-hidden">
+            <SectionHeaderComponent text="Services We Offer" className="mb-6 md:mt-9" />
             <div className="mx-6 md:grid grid-cols-2 mb-6">
                 <div className="md:p-6">
                     <SectionHeaderComponent text="🏠 Residential Support & Supervision" className="text-left text-xl" />

@@ -3,7 +3,7 @@ import SimpleParagraphComponent from "../global/SimpleParagraphComponent";
 import { FieldGroup, FieldLabel, FieldSet } from "../ui/field";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PrimaryButtonComponent from "../global/PrimaryButtonComponent";
 import SimpleDialogComponent from "../global/SimpleDialogComponent";
 
@@ -27,7 +27,14 @@ function ContactUsPageComponent() {
             alert("There was an error sending your message. Please try again later.");
         }
     }
+    useEffect(() => {
+            document.title = "Contact Us | LHDD"
+    }, []);
+    const handleCalls = () => {
+        window.open('tel:980-222-4535', '_self');
+    };
     return (
+        
         <div className="mx-8 flex flex-col justify-center gap-8 md:grid grid-rows-[0.2fr_auto_auto] grid-cols-[1fr]">
             <div>
                 <SectionHeaderComponent text="Contact Us" className="text-left md:text-center" />
@@ -60,7 +67,7 @@ function ContactUsPageComponent() {
             </div>
             <div className="md:flex flex-col [768px]:max-w-[500px] items-center md:mx-auto">
                 <SectionHeaderComponent text="Prefer to speak with someone directly?" className="text-left md:text-center" />
-                <PrimaryButtonComponent text="Call Us Now" className="mx-0 mb-8" />
+                <PrimaryButtonComponent onClick={handleCalls} text="Call Us Now" className="mx-0 mb-8" />
             </div>
         </div>
     )
