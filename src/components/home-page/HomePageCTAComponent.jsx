@@ -17,7 +17,20 @@ function HomePageCTAComponent() {
             </div>
             <div>
                 <SectionHeaderComponent text="Looking for care for a loved one?" />
-                <p className="font-semibold text-center text-base">Contact our team to learn more about our services and how we support our residents.</p>
+                <p className="font-semibold text-center text-base">Contact LHDD if your loved ones are impacted by any of the following:</p>
+                <ul className="list-inside list-disc m-4">
+                    <li>Attention deficit hyperactivity disorder (ADHD)</li>
+                    <li>Learning disabilities</li>
+                    <li>Autism</li>
+                    <li>Various other developmental delays</li>
+                    <li>Speech impairments, like stuttering and stammering</li>
+                    <li>Intellectual disabilities</li>
+                    <li>Seizure disorders</li>
+                    <li>Hearing loss (moderate and profound)</li>
+                    <li>Cerebral palsy</li>
+                    <li>Blindness</li>
+                </ul>
+                
                 <Link to="/contact">
                     <PrimaryButtonComponent text="Contact Us" />
                 </Link>

@@ -35,8 +35,8 @@ function ContactUsPageComponent() {
                     We’re here to answer your questions and help you get started.
                 </SimpleParagraphComponent>
                 <div className="flex flex-col md:flex flex-col gap-2 md:items-center">
-                    <a href="mailto:office.LHDD@livigrouphome.com" className="text-sm">✉️ office.LHDD@livigrouphome.com</a>
-                    <a href="tel:(980) 222-4535" className="text-sm">📞 (980) 222-4535</a>
+                    <a href="mailto:office.LHDD@livigrouphome.com" className="text-sm hover:underline">✉️ office.LHDD@livigrouphome.com</a>
+                    <a href="tel:(980) 222-4535" className="text-sm hover:underline">📞 (980) 222-4535</a>
                 </div>
 
             </div>

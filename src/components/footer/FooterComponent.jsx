@@ -7,11 +7,11 @@ function FooterComponent() {
                 <div className="">
                     <div className="text-white text-xl font-semibold">Need some help?</div>
                     <ul className="text-white mt-6 font-base text-base flex flex-col gap-5">
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About Us</Link></li>
-                        <li><Link to="/contact">Contact Us</Link></li>
-                        <li><Link to="/services">Services We Offer</Link></li>
-                        <li><Link to="/referrals">Referrals</Link></li>
+                        <li><Link to="/" className="hover:text-blue-300">Home</Link></li>
+                        <li><Link to="/about" className="hover:text-blue-300">About Us</Link></li>
+                        <li><Link to="/contact" className="hover:text-blue-300">Contact Us</Link></li>
+                        <li><Link to="/services" className="hover:text-blue-300">Services We Offer</Link></li>
+                        <li><Link to="/referrals" className="hover:text-blue-300">Referrals</Link></li>
                     </ul>
                 </div>
                 <div className="flex flex-col gap-4">

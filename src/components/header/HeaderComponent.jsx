@@ -53,11 +53,11 @@ function HeaderComponent() {
             </Sheet>
             <div>
                 <nav className="hidden lg:flex text-white text-base space-x-4">
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About Us</Link>
-                    <Link to="/contact">Contact Us</Link>
-                    <Link to="/services">Services We Offer</Link>
-                    <Link to="/referrals">Referrals</Link>
+                    <Link to="/" className="hover:text-blue-300">Home</Link>
+                    <Link to="/about" className="hover:text-blue-300">About Us</Link>
+                    <Link to="/contact" className="hover:text-blue-300">Contact Us</Link>
+                    <Link to="/services" className="hover:text-blue-300">Services We Offer</Link>
+                    <Link to="/referrals" className="hover:text-blue-300">Referrals</Link>
                 </nav>
             </div>
         </header>

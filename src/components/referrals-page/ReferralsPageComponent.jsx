@@ -49,7 +49,7 @@ function ReferralsPageComponent() {
             </div>
             <div>
                 <SectionHeaderComponent text="Who We Serve (Eligibility)" className="mb-6 mt-8 mx-6" />
-                <SimpleParagraphComponent className='text-left'>
+                <SimpleParagraphComponent className='text-left md:text-center w-auto'>
                     LHDD serves adults (18+) with developmental disabilities who benefit from a structured, supportive residential environment with supervision and personalized care.
                 </SimpleParagraphComponent>
             </div>
