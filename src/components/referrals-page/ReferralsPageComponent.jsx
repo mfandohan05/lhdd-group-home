@@ -28,7 +28,7 @@ function ReferralsPageComponent() {
         }
     }
     return (
-        <div>
+        <div className="max-w-[1024px] mx-auto">
             <div>
                 <SectionHeaderComponent text="Start a Referral" className="mb-6" />
                 <SimpleParagraphComponent className="text-left" text="We work with families, guardians, and professionals across North Carolina to provide safe, supportive residential care." />

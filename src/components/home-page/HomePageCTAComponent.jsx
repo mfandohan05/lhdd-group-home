@@ -3,7 +3,7 @@ import PrimaryButtonComponent from "../global/PrimaryButtonComponent";
 import { Link } from "react-router-dom";
 function HomePageCTAComponent() {
     return (
-        <div className="w-[85vw] flex flex-col justify-center mx-auto gap-8">
+        <div className="w-[85vw] flex flex-col justify-center mx-auto gap-8 md:grid grid-cols-2 lg:max-w-[1440px] mt-8">
             <div>
                 <SectionHeaderComponent text="Who LHDD Serves" />
                 <ul className="list-disc m-6">

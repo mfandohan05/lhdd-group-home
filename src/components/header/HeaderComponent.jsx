@@ -7,16 +7,19 @@ import { Link } from "react-router-dom";
 
 function HeaderComponent() {
     return (
-        <header className="flex justify-between items-center bg-primary px-4">
+        <header className="grid grid-cols-[0.8fr_0.2fr] justify-between items-center bg-primary px-4 lg:flex flex-row">
             <Link to="/">
                 <div className='flex items-center'>
                     <img src={navbarLogo} alt="LHDD Logo" className='w-[80px]' />
-                    <div className='text-white text-lg font-semibold'>Livi Group Home for Developmental</div>
+                    <div className='hidden md:block text-white text-lg font-semibold'>
+                        Livi Group Home for Developmental Disability
+                        <div className='text-sm font-normal'>Caring With Purpose. Advocating With Passion.</div>
+                    </div>
                 </div>
                 
             </Link>
             <Sheet>
-                <SheetTrigger asChild>
+                <SheetTrigger asChild className="justify-self-end lg:hidden">
                     <button className="p-2">
                         <Menu className="text-white w-9 h-9" />
                     </button>
@@ -48,6 +51,15 @@ function HeaderComponent() {
                 </SheetContent>
 
             </Sheet>
+            <div>
+                <nav className="hidden lg:flex text-white text-base space-x-4">
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About Us</Link>
+                    <Link to="/contact">Contact Us</Link>
+                    <Link to="/services">Services We Offer</Link>
+                    <Link to="/referrals">Referrals</Link>
+                </nav>
+            </div>
         </header>
     );
 }

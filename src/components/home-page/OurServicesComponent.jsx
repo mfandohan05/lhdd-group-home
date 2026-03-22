@@ -33,7 +33,7 @@ function OurServicesComponent() {
     return (
         <div>
             <SectionHeaderComponent text="Our Services" />
-            <div className="flex flex-col">
+            <div className="flex flex-col md:grid grid-cols-2 mx-4">
                 {cards.map((card, index) => (
                     <div key={index} className="flex flex-col items-center text-center py-4 gap-2 mx-6 border-b-1 border-secondary mb-6">
                         <img src={card.cardImage} alt={card.cardAltText} className="w-full h-60 object-cover mb-4" />

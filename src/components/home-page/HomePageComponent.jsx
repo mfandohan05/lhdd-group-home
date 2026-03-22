@@ -9,14 +9,14 @@ import UsefulLinksSectionComponent from "./UsefulLinksSectionComponent";
 
 function HomePageComponent() {
     return (
-        <>
+        <div className="lg:max-w-[1440px] mx-auto">
             <HeroComponent />
             <OurServicesComponent />
             <GuidingValuesComponent />
             <DividerImageComponent imageSrc={dividerImage} altText="Disabled adult giving caregiver a hug." />
             <HomePageCTAComponent />
             <UsefulLinksSectionComponent />
-        </>
+        </div>
     )
 }
 
