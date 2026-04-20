@@ -6,10 +6,13 @@ import AboutUsPageComponent from "./components/about-us-page/AboutUsPageComponen
 import ContactUsPageComponent from "./components/contact-us-page/ContactUsPageComponent";
 import ServicesPageComponent from "./components/services-page/ServicesPageComponent";
 import ReferralsPageComponent from "./components/referrals-page/ReferralsPageComponent";
+import ScrollToTop from "./components/global/ScrollToTop";
+import './App.css'; 
 
 function App() {
   return (
       <BrowserRouter>
+      <ScrollToTop />
       <HeaderComponent />
         <Routes>
           <Route path="/" element={<MainPageComponent />} />
