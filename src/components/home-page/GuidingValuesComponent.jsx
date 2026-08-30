@@ -29,7 +29,7 @@ function GuidingValuesComponent() {
     return (
         <div className="md:mb-8">
             <SectionHeaderComponent text="LHDD's Guiding Values" />
-            <h3 className="font-medium text-center p-4">Our guiding values at Livi Group Home for Developmental Disability (LHDD) are:</h3>
+            <h3 className="font-medium text-center p-4">Our guiding values at Livi Home for Development and Dignity (LHDD) are:</h3>
             <div className="flex flex-col gap-6 md:grid grid-cols-2 md:gap-x-0">
                 {guidingValues.map((value, index) => (
                     <GuidingValueCard
