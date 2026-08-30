@@ -12,7 +12,7 @@ function HeaderComponent() {
                 <div className='flex items-center'>
                     <img src={navbarLogo} alt="LHDD Logo" className='w-[80px]' />
                     <div className='hidden md:block text-white text-lg font-semibold'>
-                        Livi Group Home for Developmental Disability
+                        Livi Home for Development and Dignity
                         <div className='text-sm font-normal'>Caring With Purpose. Advocating With Passion.</div>
                     </div>
                 </div>
