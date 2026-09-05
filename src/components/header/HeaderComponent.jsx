@@ -13,7 +13,7 @@ function HeaderComponent() {
                     <img src={navbarLogo} alt="LHDD Logo" className='w-[80px]' />
                     <div className='hidden md:block text-white text-lg font-semibold'>
                         Livi Home for Development and Dignity
-                        <div className='text-sm font-normal'>Caring With Purpose. Advocating With Passion.</div>
+                        <div className='text-sm font-normal'>A Place to Live, <span className='text-[#909090]'>Grow,</span> <span className='text-[#80522A]'>and Belong.</span></div>
                     </div>
                 </div>
                 
