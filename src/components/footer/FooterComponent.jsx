@@ -1,4 +1,4 @@
-import logoWithText from "@/assets/white-transparent-logo-with-text.png";
+import logoWithText from "@/assets/blue-logo.png";
 import { Link } from "react-router-dom";
 function FooterComponent() {
     return (
